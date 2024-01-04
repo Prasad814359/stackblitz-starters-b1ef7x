@@ -1,0 +1,28 @@
+<div class="container">
+  <form [formGroup]="formValue">
+    <div class="label">Address</div>
+    <edit
+      data-testid="sample-input"
+      openBindingEvent="click"
+      (save)="updateSingleField('address')"
+    >
+      <ng-template viewMode>
+        <span style="min-width:10px">{{ this.getAddressValue }}</span>
+      </ng-template>
+      <ng-template editMode>
+        <div class="form-group">
+          <mat-form-field appearance="outline">
+            <input
+              matInput
+              type="text"
+              formControlName="address"
+              editableOnEnter
+              editableOnEscape
+            />
+            <mat-icon matSuffix>edit</mat-icon>
+          </mat-form-field>
+        </div>
+      </ng-template>
+    </edit>
+  </form>
+</div>

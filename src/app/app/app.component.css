@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 20%;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: rgb(154, 154, 154);
+}
+
+mat-icon{
+  font-size: 20px;
+  color: #111827;
+}
+
+span {
+  color: #111827;
+}
